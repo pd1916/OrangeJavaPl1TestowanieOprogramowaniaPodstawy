@@ -54,4 +54,16 @@ class PersonTest {
         assertThat(result).isFalse(); //assertJ
     }
 
+    @Test
+    void shouldCreateCorrectPerson() {
+        //given
+        Person person = new Person(NAME, LASTNAME, -2, ADDRESS);
+        int expectedResult = 0;
+        //when
+        int result = person.getAge();
+        //then
+        assertEquals(expectedResult, result); //jUnit
+        assertThat(result).isEqualTo(expectedResult);
+    }
+
 }

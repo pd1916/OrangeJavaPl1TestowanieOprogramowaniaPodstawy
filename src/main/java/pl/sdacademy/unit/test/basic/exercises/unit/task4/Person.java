@@ -10,8 +10,16 @@ public class Person {
     public Person(String name, String surname, int age, Address address) {
         this.name = name;
         this.surname = surname;
-        this.age = age;
+        if(age < 0) {
+            this.age = 0;
+        } else {
+            this.age = age;
+        }
         this.address = address;
+    }
+
+    public int getAge() {
+        return age;
     }
 
     public boolean isChild() {
