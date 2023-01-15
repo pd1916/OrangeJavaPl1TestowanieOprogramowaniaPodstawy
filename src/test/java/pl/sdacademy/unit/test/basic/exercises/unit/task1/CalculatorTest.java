@@ -4,7 +4,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CalculatorTest {
     private static Calculator calculator;
@@ -15,7 +15,7 @@ class CalculatorTest {
     }
 
     @Test
-    void shouldAddTwoValues(){
+    void shouldAddTwoValues() {
         //given
         int firstDigit = 2;
         int secondDigit = 3;
@@ -28,7 +28,7 @@ class CalculatorTest {
     }
 
     @Test
-    void shouldSubtractTwoValues(){
+    void shouldSubtractTwoValues() {
         //given
         int expectedResult = 6;
         //when

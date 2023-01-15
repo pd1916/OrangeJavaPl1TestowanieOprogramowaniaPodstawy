@@ -2,7 +2,7 @@ package pl.sdacademy.unit.test.basic.exercises.tdd.task3;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AccountTest {
     private static final Customer CUSTOMER_1 = new Customer("Jan", "Kowalski");

@@ -3,7 +3,8 @@ package pl.sdacademy.unit.test.basic.exercises.unit.task2;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class StringUtilTest {
     /*
@@ -21,7 +22,7 @@ class StringUtilTest {
      */
 
     @Test
-    void shouldReturnTrueIfInputContainsOnlySpace(){
+    void shouldReturnTrueIfInputContainsOnlySpace() {
         //given
         String input = " ";
         //when
@@ -32,7 +33,7 @@ class StringUtilTest {
     }
 
     @Test
-    void shouldReturnTrueIfInputIsNull(){
+    void shouldReturnTrueIfInputIsNull() {
         //given
         String input = null;
         //when
@@ -43,7 +44,7 @@ class StringUtilTest {
     }
 
     @Test
-    void shouldReturnTrueIfInputIsEmpty(){
+    void shouldReturnTrueIfInputIsEmpty() {
         //given
         String input = "";
         //when
@@ -54,7 +55,7 @@ class StringUtilTest {
     }
 
     @Test
-    void shouldReturnFalseIfInputIsNotEmpty(){
+    void shouldReturnFalseIfInputIsNotEmpty() {
         //given
         String input = "ala ma kota";
         //when
