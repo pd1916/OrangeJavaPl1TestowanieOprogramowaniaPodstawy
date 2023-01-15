@@ -5,10 +5,13 @@ public class Person {
     private String surname;
     private int age;
 
-    public Person(String name, String surname, int age) {
+    private Address address;
+
+    public Person(String name, String surname, int age, Address address) {
         this.name = name;
         this.surname = surname;
         this.age = age;
+        this.address = address;
     }
 
     public boolean isChild() {
