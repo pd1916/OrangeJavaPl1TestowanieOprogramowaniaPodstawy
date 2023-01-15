@@ -6,7 +6,9 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PersonTest {
-    private final static Address address = new Address("Dworcowa", "Gdynia");
+    private final static String NAME = "Jan";
+    private final static String LASTNAME = "Kowalski";
+    private final static Address ADDRESS = new Address("Dworcowa", "Gdynia");
 
     /*
     true:
@@ -22,7 +24,7 @@ class PersonTest {
     @Test
     void shouldReturnTrueIfAgeIsZero() {
         //given
-        Person person = new Person("Jan", "Kowalski", 0, address);
+        Person person = new Person(NAME, LASTNAME, 0, ADDRESS);
         //when
         boolean result = person.isChild();
         //then
@@ -33,7 +35,7 @@ class PersonTest {
     @Test
     void shouldReturnTrueIfAgeIs18() {
         //given
-        Person person = new Person("Jan", "Kowalski", 18, address);
+        Person person = new Person(NAME, LASTNAME, 18, ADDRESS);
         //when
         boolean result = person.isChild();
         //then
@@ -44,7 +46,7 @@ class PersonTest {
     @Test
     void shouldReturnFalseIfAgeIsGreaterThan18() {
         //given
-        Person person = new Person("Jan", "Kowalski", 19, address);
+        Person person = new Person(NAME, LASTNAME, 19, ADDRESS);
         //when
         boolean result = person.isChild();
         //then
